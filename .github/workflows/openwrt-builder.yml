@@ -23,11 +23,11 @@ on:
       repository_owner:
         description: '仓库所有人'
         required: false
-        default: 'immortalwrt'
+        default: 'openwrt'
       repository_name:
         description: '仓库名'
         required: false
-        default: 'immortalwrt'
+        default: 'openwrt'
       repository_branch:
         description: '分支'
         required: false
@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     env:
-      REPO_URL: "https://github.com/immortalwrt/immortalwrt.git"
+      REPO_URL: "https://github.com/openwrt/openwrt.git"
       REPO_BRANCH: openwrt-25.12
       FEEDS_CONF: feeds.conf.default
       CONFIG_FILE: .config
